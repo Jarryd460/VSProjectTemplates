@@ -1,0 +1,71 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Jarryd Deane",
+  "classifications": [ "Web", "WebAPI" ],
+  "identity": "Web.Application.Template",
+  "name": "Web application template",
+  "description": "My first Dotnet Web application template",
+  "shortName": "webapplicationtemplate",
+  "sourceName": "WebApplicationTemplate",
+  "defaultName": "WebApplication",
+  "tags": {
+    "language": "C#",
+    "type": "project"
+  },
+  "preferNameDirectory": true,
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the project",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net6.0",
+          "description": "Target net6.0"
+        },
+        {
+          "choice": "net5.0",
+          "description": "Target net5.0"
+        }
+      ],
+      "defaultValue": "net6.0",
+      "replaces": "net6.0"
+    },
+    "EnableSwaggerSupport": {
+      "type": "parameter",
+      "description": "Enables swagger support",
+      "datatype": "bool",
+      "defaultValue": "true"
+    },
+    "IncludeDevAppSettings": {
+      "type": "parameter",
+      "description": "Adds appsettings.Development.json",
+      "datatype": "bool",
+      "defaultValue": "true"
+    },
+    "NotNet6Framework": {
+      "type": "computed",
+      "description": "",
+      "datatype": "bool",
+      "value": "(Framework != 'net6.0')"
+    }
+  },
+  "sources": [
+    {
+      "modifiers": [
+        {
+          "condition": "(!IncludeDevAppSettings)",
+          "exclude": [
+            "appsettings.Development.json"
+          ]
+        },
+        {
+          "condition": "(!NotNet6Framework)",
+          "exclude": [
+            "Startup.cs"
+          ]
+        }
+      ]
+    }
+  ]
+}

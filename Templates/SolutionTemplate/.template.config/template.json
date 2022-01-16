@@ -1,0 +1,58 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Jarryd Deane",
+  "classifications": [ "Console", "Library" ],
+  "name": "Console application solution template",
+  "defaultName": "ConsoleApplication",
+  "identity": "Console.Application.Solution.Template",
+  "shortName": "consoleapplicationsolutiontemplate",
+  "tags": {
+    "language": "C#",
+    "type": "solution"
+  },
+  "sourceName": "ConsoleApplicationTemplate",
+  "preferNameDirectory": true,
+  "description": "My first Dotnet solution template",
+  "symbols": {
+    "Framework": {
+      "type": "parameter",
+      "description": "The target framework for the console application in the solution",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "net6.0",
+          "description": "Target net6.0"
+        },
+        {
+          "choice": "net5.0",
+          "description": "Target net5.0"
+        }
+      ],
+      "defaultValue": "net6.0",
+      "replaces": "net6.0"
+    },
+    "LibraryFramework": {
+      "type": "parameter",
+      "description": "The target framework for the library in the solution",
+      "datatype": "choice",
+      "choices": [
+        {
+          "choice": "netstandard2.1",
+          "description": "Target netstandard2.1"
+        },
+        {
+          "choice": "netstandard2.0",
+          "description": "Target netstandard2.0"
+        }
+      ],
+      "defaultValue": "netstandard2.1",
+      "replaces": "netstandard2.1"
+    },
+    "Dotnet6": {
+      "type": "computed",
+      "description": "",
+      "datatype": "bool",
+      "value": "(Framework == 'net6.0')"
+    }
+  }
+ }

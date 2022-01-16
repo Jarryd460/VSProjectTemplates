@@ -1,0 +1,20 @@
+{
+  "$schema": "http://json.schemastore.org/vs-2017.3.host",
+  "icon": "icon.png",
+  "symbolInfo": [
+    {
+      "id": "EnableSwaggerSupport",
+      "name": {
+        "text": "Enable Swagger Support"
+      },
+      "isVisible": "true"
+    },
+    {
+      "id": "IncludeDevAppSettings",
+      "name": {
+        "text": "Include a appsettings.json file for development (appsettings.Development.json)"
+      },
+      "isVisible": "true"
+    }
+  ]
+}

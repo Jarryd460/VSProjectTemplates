@@ -1,0 +1,15 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <!--#if (Framework == 'net6.0')-->
+    <ImplicitUsings>enable</ImplicitUsings>
+    <!--#endif-->
+  </PropertyGroup>
+<!--#if (EnableSwaggerSupport) -->
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+	<!--#endif -->
+</Project>

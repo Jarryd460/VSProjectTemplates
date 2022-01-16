@@ -1,0 +1,13 @@
+{
+  "$schema": "http://json.schemastore.org/template",
+  "author": "Jarryd Deane",
+  "classifications": [ "Common", "Code" ],
+  "name": "String extensions class",
+  "identity": "JarrydDeane.Item.StringExtensions",
+  "shortName": "stringext",
+  "tags": {
+    "language": "C#",
+    "type": "item"
+  },
+  "description": "Generates String extensions class"
+}
