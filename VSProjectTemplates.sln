@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32014.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoItemTemplate", "CustomLibrary\AutoItemTemplate.csproj", "{6240EA71-646A-4DFB-9FB0-ACB782B885B8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AutoItemTemplate", "VSTemplates\AutoItemTemplate\AutoItemTemplate.csproj", "{6240EA71-646A-4DFB-9FB0-ACB782B885B8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ManualItemTemplate", "VSTemplates\ManualItemTemplate\ManualItemTemplate.csproj", "{EDE04820-AE55-4097-8100-3D839A485653}"
 EndProject
